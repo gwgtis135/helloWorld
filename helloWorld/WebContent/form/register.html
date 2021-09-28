@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form/register.html</title>
+</head>
+<body>
+    <table border="0">
+        <thead>
+           <h3 style="text-align: center;">회원가입</h3>
+        </thead>
+        <tbody>
+            <form action="get.jsp" method="get">
+                
+                <tr>
+                <td style="width: 100px;">아이디</td>
+                <td><input type="text" name="id" style="width: 100;"></td>
+                <td><button type="button">중복확인</button></td>
+                </tr>
+
+                <tr>
+                <td style="width: 100px;">비밀번호</td> 
+                <td><input type="text" name="pw"></td>
+                </tr>
+                <tr>
+                <td style="width: 100px;"></td>
+                <td><input type="number" placeholder="비밀번호 재확인" name="salary"></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;"> 이름</td>
+                    <td><input type="text" name="ename"></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;"> 주소</td>
+                    <td><input type="text" name="addr1" style="width: 50px;">-<input type="text" name="addr" style="width: 50px;">
+                    <button type="button">우편번호</button></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;"></td>
+                    <td><input type="text" name="ename"></td> 
+                </tr>
+                <tr>
+                    <td style="width: 100px;"></td>
+                    <td><input type="text" name="ename"></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;">휴대전화</td>
+                    <td><input type="text" name="ename"></td>
+                </tr>
+               
+                
+               
+                
+                
+                
+
+               
+             </form>
+        </tbody>
+    </table>
+
+    <!-- colspan(td 합치기), rowspan(tr 합치기) 연습 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <td rowspan="2">이름</td>
+                <td>국어</td>
+            </tr>
+            <tr>
+                <td>영어</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">홍길동</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동길홍</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <tr>
+                <td colspan="3">이름</td>
+            </tr>
+            <tr>
+                <th>국어</th>
+                <th>영어</th>
+                <th>영어</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: right;">
+                <td colspan="3" style="text-align: center;">홍길동</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>89</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">박종현</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td><img width="30px" src="../img/son.jpg" alt = "손흥민 사진입니다."></td>
+                <td><a href="#">99</a></td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <button type="button" onclick="location.href ='layout.html'"><img src="../img/html5.jpg"></button>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="london.html">손흥민 이력서</a></li>
+      <li><a href="paris.html">로그인</a></li>
+      <li><a href="tokyo.html"">이디야 카페</a></li>
+      <li><a href="signUp.html"">회원가입</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <form action="get.jsp" method="get">
+      아이디:<input type="text" name="employeeId"><br>
+      연락처:<input type="text" name="phone"><br>
+      급여:<input type="number" name="salary"><br>
+      <!-- <input type="password" name="userPw"><br> -->
+      <input type="submit" value="전송"><br>
+      <input type="reset" value="초기화"><br>
+   </form>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
